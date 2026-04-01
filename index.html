@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Influencer Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Influencer Recommendation System</h2>
+    <p style="text-align:center; font-size:14px;">
+    Find the best influencers for your product 🚀
+</p>
+
+    <form id="influencerForm">
+        
+        <!-- Product Type -->
+        <label>Product Type</label>
+        <select id="productType">
+            <option value="Beauty">Beauty</option>
+            <option value="Tech">Tech</option>
+            <option value="Fitness">Fitness</option>
+            <option value="Food">Food</option>
+        </select>
+
+        <!-- Product Info -->
+        <label>Product Info</label>
+        <input type="text" id="productInfo" placeholder="Enter product details">
+
+        <!-- Target Audience -->
+        <label>Target Audience</label>
+        <input type="text" id="audience" placeholder="e.g. Girls 18-30">
+
+        <!-- Platform -->
+        <label>Platform</label>
+        <select id="platform">
+            <option value="Instagram">Instagram</option>
+            <option value="YouTube">YouTube</option>
+        </select>
+
+        <!-- Influencer Type -->
+        <label>Influencer Type</label>
+        <select id="type">
+            <option value="Micro">Micro</option>
+            <option value="Macro">Macro</option>
+            <option value="Celebrity">Celebrity</option>
+        </select>
+
+        <button type="submit">Find Influencers 🔍</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
